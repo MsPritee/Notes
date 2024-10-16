@@ -1,0 +1,14 @@
+Practical 8 :
+Flip flop - https://tinyurl.com/3peckwrs
+
+3 bit Synchronous Counter - https://tinyurl.com/3dxac9y4
+
+Practical 9 :
+mod-n Counter - https://shorturl.at/5cKOK
+
+Practical 10 : 
+4 bit shift register SISO -https://tinyurl.com/58rcsskh
+
+4 bit shift register PIPO - https://tinyurl.com/4fdhths5
+
+4 bit shift register SIPO - https://tinyurl.com/4utc2a7h  
