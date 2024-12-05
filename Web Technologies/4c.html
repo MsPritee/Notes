@@ -1,0 +1,46 @@
+<!-- CSS Transitions and Animations  -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Transitions and Animations</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .box:hover {
+            background-color: red;
+            transform: scale(1.2);
+        }
+
+        .animated-box {
+            animation: myAnimation 5s infinite;
+        }
+
+        @keyframes myAnimation {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(200px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box animated-box"></div>
+</body>
+
+</html>
