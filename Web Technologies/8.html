@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #ccbbde, #ffd2f5, #f9c9ef);
+            color: #fff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #ff8a00;
+        }
+
+        .form-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            width: 600px;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+        }
+
+        .col {
+            margin: 5px;
+            width: 50%;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #f9f9f9;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 8px;
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 14px;
+        }
+
+        input[type="text"]:hover,
+        input[type="email"]:hover,
+        input[type="date"]:hover,
+        input[type="tel"]:hover,
+        textarea:hover,
+        select:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            scale: 1.025;
+        }
+
+        input[type="text"]:active {
+            border: solid #eb1010 5px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+            margin-bottom: 10px;
+
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background: linear-gradient(90deg, #ff8a00, #e52e71);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+            margin: 0 15px;
+
+        }
+
+        input[type="reset"] {
+            background: linear-gradient(90deg, #f16ada, #eb1010);
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        select {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .radio-group,
+        .checkbox-group {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            margin-right: 10px;
+        }
+
+        ::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Contact Form</h2>
+
+        <form>
+            <div class="form-container">
+                <div class="row">
+                    <div class="col">
+                        <label>Name:</label>
+                        <input type="text" placeholder="Enter your name" required>
+
+                        <label>Email:</label>
+                        <input type="email" placeholder="Enter your email" required>
+
+                        <label>Message:</label>
+                        <textarea placeholder="Drop a message here..." required rows="5"></textarea>
+                    </div>
+                    <div class="col">
+                        <label>Date:</label>
+                        <input type="date" required>
+
+                        <label>Mobile No.:</label>
+                        <input type="tel" pattern="[0-9]{10}" placeholder="Enter your mobile number" required>
+
+                        <label for="country">Country:</label>
+                        <select id="country">
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                        </select>
+
+                        <div class="radio-group">
+                            <label>Gender:</label>
+
+                            <input type="radio" value="male" name="Gender"> <label>Male</label>
+                            <input type="radio" value="female" name="Gender"> <label>Female</label>
+
+                        </div>
+
+                        <div class="checkbox-group">
+                            <label>Fav Actress:</label>
+
+                            <input type="checkbox" value="Deepika" name="fav"> <label>Deepika</label>
+                            <input type="checkbox" value="Aaliya" name="fav"> <label>Aaliya</label>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="justify-content: center;">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
